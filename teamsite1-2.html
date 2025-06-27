@@ -7,37 +7,36 @@
   </head>
  <body>
   
-    <h1>京都</h1>
-    <img id="slideshow" src="IMG_2650.jpeg" alt="スライド画像"
-    width="870"
-    height="550">
+     <section>
+        
 
-    <script>
-    const images = [
-      'IMG_2650.jpeg',
-      'IMG_2604.jpeg',
-      'IMG_2650.jpeg',
-      'IMG_2555.jpg',
-      'IMG_2525.jpg'
-    ];
-    let currentIndex = 0;
-
-    function changeImage() {
+       <video playsinline autoplay muted loop>
+       <source src="" type="video/mp4"> 
+      <source src="" type="video/webm"> 
+      お使いのブラウザは video タグに対応していません。 
+    </video> 
       
-      currentIndex = (currentIndex + 1) % images.length;
-      
-      document.getElementById('slideshow').src = images[currentIndex];
-    }
-
+       </video>
+    <div class="bg-white">
+     <h1>京都府</h1>
+     <p>京都のおすすめ観光スポット</p>
     
-    window.addEventListener('load', function(){
-      setInterval(changeImage, 2000);
-    });
-  </script>
-    <h2>目次</h2> 
-    <ul>
-        <li>おすすめの観光地</li>
-        <li>食べ物</li>   
-    </ul>
+    <div class="mokuji">
+    <h1 id="mokuji-midasi">もくじ</h1>
+    <p>・場所1</p>
+    <p>・2</p>
+    <p>・3</p>
+    <p></p>
 
- </body> 
+    </div>
+    
+
+  </div>
+
+  
+
+  
+    
+   
+  
+</section>
