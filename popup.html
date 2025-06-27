@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ポップアップサンプル</title>
+  <script>
+    function openSmallWindow() {
+      // 幅300px・高さ200px の新しいウィンドウを開く
+      var popup = window.open(
+        "http://127.0.0.1:3000/1-3miniwindow.html",                    // URL を指定しなければ空のウィンドウ
+        "popupWindow",         // ウィンドウ名（同じ名前なら同じウィンドウを再利用）
+        "width=300,height=200,menubar=no,toolbar=no,location=no,scrollbars=yes"
+      );
+      // ウィンドウに中身を動的に書き込む
+      popup.document.write(
+        '<!DOCTYPE html><html lang="ja"><head>' +
+        '<meta charset="UTF-8"><title>小さなウィンドウ</title>' +
+        '<style>body{font-family:sans-serif;padding:10px;}</style>' +
+        '</head><body>' +
+        '<h2>こんにちは！</h2>' +
+        '<p>これは小さなポップアップウィンドウです。</p>' +
+        '<button onclick="window.close()">閉じる</button>' +
+        '</body></html>'
+      );
+      popup.document.close();  // 書き込み完了を通知
+    }
+  </script>
+</head>
+<body>
+  <button onclick="openSmallWindow()">あ</button>
+</body>
+</html>
