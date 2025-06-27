@@ -25,10 +25,11 @@ video {
   left: 0;
   width: auto;
   height: auto;
-  min-width: 100%;
-  min-height: 70%;
-  background: url('../images/bg.png') no-repeat;
-  background-size: cover;
+  min-width: 100vw;
+  min-height: 100vw;
+  object-fit: cover;
+  object-position: center;
+
   z-index: -1;
 }
  
