@@ -2,16 +2,37 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>ウェブサイト１</title>
+    <title>ウェブサイトの右側</title>
+    <link rel="stylesheet" type="text/css"
+    href="right.css">
   </head>
   <body>
-    <h1>旅行先</h1>
-    <div class="photo">
-        <img src="photo1.jpg" alt="写真1">
-        <img src="photo2.jpg" alt="写真2"><br>
-        <img src="photo3.jpg" alt="写真3">
-        <img src="photo4.jpg" alt="写真4"><br>
-        <img src="photo5.jpg" alt="写真5">
-        <img src="photo6.jpg" alt="写真6">
-    </div>
+    <h1>SMILE TRIP</h1>
+    <img id="slideshow" src="IMG_2650.jpeg" alt="スライド画像"
+    width="870"
+    height="550">
+
+    <script>
+    
+    const images = [
+      'IMG_2650.jpeg',
+      'IMG_2604.jpeg',
+      'IMG_2650.jpeg',
+      'IMG_2555.jpg',
+      'IMG_2525.jpg'
+    ];
+    let currentIndex = 0;
+
+    function changeImage() {
+      
+      currentIndex = (currentIndex + 1) % images.length;
+      
+      document.getElementById('slideshow').src = images[currentIndex];
+    }
+
+    
+    window.addEventListener('load', function(){
+      setInterval(changeImage, 2000);
+    });
+  </script>
   </body>
