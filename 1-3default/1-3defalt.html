@@ -1,0 +1,69 @@
+<!--1-3の仕組み考えるための仮ファイル-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>神奈川県　旅行おすすめスポット特集</title>
+
+  <!-- bxSlider のスタイル -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+  >
+
+  <!-- 独自 CSS -->
+  <link rel="stylesheet" href="1-3default.css">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/earlyaccess/kokoro.css"
+    rel="stylesheet"
+  >
+
+  <!-- jQuery -->
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+  ></script>
+  <!-- bxSlider 本体 -->
+  <script
+    src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"
+  ></script>
+
+  <script>
+    $(function(){
+      $('.slider').bxSlider({
+        auto: true,      // 自動スタート
+        pause: 5000,   
+        slideWidth: 700  // 5秒ごとに切り替え
+         // 画像の横幅
+      });
+    });
+  </script>
+  <style>
+    /* スライダー全体を包む .bx-wrapper を中央寄せ */
+    
+  </style>
+</head>
+<body >
+  <h1>ＫＡＮＡＧＡＷＡ　ＶＡＣＡＴＩＯＮ　ＳＰＯＴ</h1>
+  <h3>☆江ノ島水族館</h3>
+
+  <div class="button">
+    <button
+      onclick="location.href='https://www.google.co.jp/maps/place/%E6%96%B0%E6%B1%9F%E3%83%8E%E5%B3%B6%E6%B0%B4%E6%97%8F%E9%A4%A8/@35.3100048,139.4768531,17z/data=!3m1!5s0x60184ef9a1beac9b:0x9318c6bf6c2aa680!4m6!3m5!1s0x60184ef97613a5af:0x679611b7d80b7d4f!8m2!3d35.3100048!4d139.479428!16s%2Fg%2F120p5275?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D';"
+    >地図</button>
+    <button
+      onclick="location.href='1-3option.html';"
+    >評価</button>
+    <button>お問い合わせ</button>
+  </div>
+
+  <!-- スライダー本体 -->
+  <div class="slider">
+    <div><img src="4.jpg" alt="画像1"></div>
+    <div><img src="1.jpg"       alt="画像2"></div>
+    <div><img src="3.jpeg"     alt="画像3"></div>
+    <div><img src="2.jpeg"     alt="画像4"></div>
+  </div>
+</body>
+</html>
