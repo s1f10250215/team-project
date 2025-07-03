@@ -52,7 +52,38 @@ h1#mokuji-midasi {
     font-family:"Kokoro";  
 }
 
+h2{
+  text-align: center;
+  background-color: bisque;
+  font-family: "Kokoro";
+}
+img{
+    width: 100%;
+      max-width: 500px;
+      height: 500px;
+      margin: 0 auto;
+}
 
+/* 地図サイズの調整 */
+.map-container {
+      width: 100%;
+      max-width: 350px;
+      height: 200px;
+      margin: 0 auto;
+    }
+.map-container iframe {
+     border: 0;
+     width: 100%;
+     height: 100%;
+    }
+
+
+
+h3.info{
+        text-align: right;
+        background-color: aquamarine;
+        
+}
 
 
 

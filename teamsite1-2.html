@@ -10,55 +10,102 @@
   
      <section>
         
-
        <video playsinline autoplay muted loop>
        <source src="13690396_1920_1080.2.mp4" type="video/mp4"> 
        <source src="13690396_1920_1080.2.mp4" type="video/webm"> 
       お使いのブラウザは video タグに対応していません。 
     </video> 
       
-       </video>
     <div class="bg-white">
      <h1>京都府</h1>
      <p>京都のおすすめ観光スポット</p>
     
     <div class="mokuji">
     <h1 id="mokuji-midasi">もくじ</h1>
-    <p>銀閣寺</p>
-    <p>伏見稲荷大社</p>
-    <p>平等院鳳凰堂</p>
-    <p>金閣寺</p>
+   <ol>
+      <li><a href="#sec1">銀閣寺</a></li>
+      <li><a href="#sec2">伏見稲荷大社</a></li>
+      <li><a href="#sec3">平等院鳳凰堂</a></li>
+   </ol>
     </div>
-      
+    </div> 
 
-
-
-
-
-
-
-  </div> 
 </section>
 
+
   <h2>銀閣寺</h2>
-    <img src=""  alt="銀閣寺の写真">
-    <h3>所在地</h3>
-  
+  <img
+        class="slideshow"
+        src="IMG_250702_1.jpg"
+        alt="銀閣寺 スライド画像"
+        width="870" height="550"
+        data-images='[
+          "IMG_250702_1.jpg",
+          "S__131850251.jpg",
+          "IMG_250702.jpg"
+        ]'
+        >
+  <h3 id="info">基本情報</h3>
+
+  <h3>所在地</h3>
+    <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408.39862102893375!2d135.79809099193665!3d35.02700220885912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600109050b426fe1%3A0x258aca1ce888abc9!2z5p2x5bGx5oWI54Wn5a-6!5e0!3m2!1sja!2sjp!4v1751421252232!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  <p>ホームページは<a href="https://www.shokoku-ji.jp/ginkakuji/">こちら</a></p>
+
 
 
 
 <h2>伏見稲荷大社</h2>
 <img src="" alt="伏見稲荷の写真">
 <h3>所在地</h3>
-
-<h2>aaaaaa</h2>
-<img src="" alt="平等院の写真">
-
-
+<div class="map-container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.5574619722415!2d135.77661267441275!3d34.967698868842355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010f153d2e6d21%3A0x7b1aca1c753ae2e9!2z5LyP6KaL56iy6I235aSn56S-!5e0!3m2!1sja!2sjp!4v1751446868602!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 
 
 
 
+<h2>平等院鳳凰堂</h2>
+<img
+        class="slideshow"
+        src="IMG_250702_2.jpg"
+        alt="平等院鳳凰堂 スライド画像"
+        width="870" height="550"
+        data-images='[
+          "IMG_250702_2.jpg",
+          "IMG_131850249.jpg",
+          "IMG_250702_3.jpg"
+        ]'
+      >
+
+    
+<h3>所在地</h3>
+<div class="map-container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.683050192457!2d135.80506097440832!3d34.889304473071995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001117f72442605%3A0x2df2f3c0c97cca10!2z6bOz5Yew5aCC!5e0!3m2!1sja!2sjp!4v1751446972035!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+
+
+
+
+
+</main>
+
+<script>
+    window.addEventListener('load', () => {
+      document.querySelectorAll('.slideshow').forEach((imgEl) => {
+        // data-images 属性をパースして配列化
+        const images = JSON.parse(imgEl.getAttribute('data-images'));
+        let idx = 0;
+        setInterval(() => {
+          idx = (idx + 1) % images.length;
+          imgEl.src = images[idx];
+        }, 2000);
+      });
+    });
+  </script>
 
 
 
