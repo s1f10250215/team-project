@@ -1,7 +1,119 @@
-.h1{
-    text-align: center;
-    color: pink;
+
+
+
+h1 {
+    text-align:center
+    
 }
+
+body {
+    color:dimgrey
+}
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  overflow: hidden;
+}
+ 
+video {
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1
+}
+ 
+.bg-white {
+  background: rgba(255,255,255,0.75);
+  padding: 130px 130px;
+  text-align: center; /* テキストは中央揃え */
+  max-width: 90%;
+  box-sizing: border-box;
+
+}
+.mokuji{
+    background:antiquewhite;
+    
+    
+
+    
+}
+
+h1#mokuji-midasi {
+    background-color:antiquewhite;  
+    font-family:"Kokoro";  
+}
+
+h2{
+  text-align: center;
+  background-color: bisque;
+  font-family: "Kokoro";
+  display: block;
+}
+
+img{
+    width: 100%;
+      max-width: 500px;
+      height: 500px;
+      margin: 0 auto;
+}
+/* ラッパーを flex コンテナに */
+.slide-info__wrapper {
+  display: flex;
+  
+  gap: 20px;                  /* 要素間の隙間 */
+  margin-bottom: 40px;        /* セクション下部との余白 */
+}
+
+
+/* 情報ボックス側 */
+.slide-info__wrapper .info-box {
+  flex: 1;                    /* 残りの幅をすべて使う */
+  padding: 10px 15px;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.slide-info__wrapper .info-box h3 {
+  margin-top: 0;
+}
+
+.slide-info__wrapper .info-box ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+.slide-info__wrapper .info-box li {
+  margin-bottom: 0.5em;
+}
+
+/* 地図サイズの調整 */
+.map-container {
+      width: 100%;
+      max-width: 350px;
+      height: 200px;
+      margin: 0 auto;
+    }
+.map-container iframe {
+     border: 0;
+     width: 100%;
+     height: 100%;
+    }
+
+p.home{
+       font-size: 20px;
+}
+
+
 
 
 

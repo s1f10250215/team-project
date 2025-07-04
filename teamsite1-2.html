@@ -4,40 +4,181 @@
     <meta charset="UTF-8">
     <title>旅行先2</title>
     <link rel="stylesheet" href="css/teamsite1-2.css">
+       <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet">
   </head>
  <body>
   
-    <h1>京都</h1>
-    <img id="slideshow" src="IMG_2650.jpeg" alt="スライド画像"
-    width="870"
-    height="550">
-
-    <script>
-    const images = [
-      'IMG_2650.jpeg',
-      'IMG_2604.jpeg',
-      'IMG_2650.jpeg',
-      'IMG_2555.jpg',
-      'IMG_2525.jpg'
-    ];
-    let currentIndex = 0;
-
-    function changeImage() {
+     <section class="hero">
+        
+       <video playsinline autoplay muted loop>
+       <source src="13690396_1920_1080.2.mp4" type="video/mp4"> 
+       <source src="13690396_1920_1080.2.mp4" type="video/webm"> 
+      お使いのブラウザは video タグに対応していません。 
+    </video> 
       
-      currentIndex = (currentIndex + 1) % images.length;
-      
-      document.getElementById('slideshow').src = images[currentIndex];
-    }
-
+    <div class="bg-white">
+     <h1>京都府</h1>
+     <p>京都のおすすめ観光スポット</p>
     
-    window.addEventListener('load', function(){
-      setInterval(changeImage, 2000);
+    <div class="mokuji">
+    <h1 id="mokuji-midasi">もくじ</h1>
+   <ol>
+      <li><a href="#sec1">銀閣寺</a></li>
+      <li><a href="#sec2">伏見稲荷大社</a></li>
+      <li><a href="#sec3">平等院鳳凰堂</a></li>
+      <li><a href="#sec4">清水寺</a></li>
+      <li><a href="#sec5">金閣寺</a></li>
+   </ol>
+    </div>
+    </div> 
+
+</section>
+ <h2>銀閣寺</h2>
+<div class="slide-info__wrapper">
+  <img
+        class="slideshow"
+        src="IMG_250702_1.jpg"
+        alt="銀閣寺 スライド画像"
+        width="870" height="550"
+        data-images='[
+          "IMG_250702_1.jpg",
+          "S__131850251.jpg",
+          "IMG_250702.jpg"
+        ]'
+        >
+  <div class="info-box">
+  <h3>基本情報</h3>
+  <ul>
+        <li>正式名称：慈照寺</li>
+        <li>通称：銀閣寺</li>
+        <li>開山／開基：東山文化（足利義政）</li>
+        <li>拝観時間：夏期（ 3月～11月）8：30～17：00/冬期（12月～ 2月）9：00～16：30）</li>
+        <li>拝観料：高校生以上：500円/小・中学生：300円</li>
+        <li>見どころ：建築様式（金閣寺との違い）</li>
+        <li>所在地</li>
+        <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408.39862102893375!2d135.79809099193665!3d35.02700220885912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600109050b426fe1%3A0x258aca1ce888abc9!2z5p2x5bGx5oWI54Wn5a-6!5e0!3m2!1sja!2sjp!4v1751421252232!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </ul>
+       <p class="home">公式ホームページは<a href="https://www.shokoku-ji.jp/ginkakuji/">こちら</a></p>
+      </div>
+      </div>
+
+
+
+
+<h2>伏見稲荷大社</h2>
+<div class="slide-info__wrapper">
+  <img
+        class="slideshow"
+        src="IMG_1.jpg"
+        alt="伏見稲荷 スライド画像"
+        width="870" height="550"
+        data-images='[
+          "IMG_1.jpg",
+          "IMG703jpg.jpg",
+          "IMG_250jpg.jpg"
+        ]'
+        >
+  <div class="info-box">
+  <h3>基本情報</h3>
+  <ul>
+        <li>正式名称：伏見稲荷大社</li>
+        <li>創建：711年(秦伊侶巨)</li>
+        <li>拝観時間：いつでも(祈祷・対応時間 8：30～16：30/授与所 8：00～18：00)</li>
+        <li>拝観料：無料</li>
+        <li>見どころ：千本鳥居（実は1000本以上あります）</li>
+        <li>所在地</li>
+         <div class="map-container">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.5574619722415!2d135.77661267441275!3d34.967698868842355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010f153d2e6d21%3A0x7b1aca1c753ae2e9!2z5LyP6KaL56iy6I235aSn56S-!5e0!3m2!1sja!2sjp!4v1751446868602!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+  </ul>
+  <p class="home">公式ホームページは<a href="https://inari.jp/">こちら</a></p>
+</div>
+</div>
+
+
+
+<h2>平等院鳳凰堂</h2>
+<div class="slide-info__wrapper">
+<img
+        class="slideshow"
+        src="IMG_250702_2.jpg"
+        alt="平等院鳳凰堂 スライド画像"
+        width="870" height="550"
+        data-images='[
+          "IMG_250702_2.jpg",
+          "IMG_131850249.jpg",
+          "IMG_250702_3.jpg"
+        ]'
+      >
+<div class="info-box">
+  <h3>基本情報</h3>
+  <ul>
+        <li>正式名称：平等院鳳凰堂</li>
+        <li>創建：1052年(藤原頼通)</li>
+        <li>拝観時間：8:45~17:30</li>
+        <li>拝観料：大人：700円/中高生：400円/小学生：300円</li>
+        <li>見どころ：本堂(10円玉の裏に描いてあるのは平等院鳳凰堂です!)</li>
+        <li>所在地</li>
+<div class="map-container">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.683050192457!2d135.80506097440832!3d34.889304473071995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001117f72442605%3A0x2df2f3c0c97cca10!2z6bOz5Yew5aCC!5e0!3m2!1sja!2sjp!4v1751538081254!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</ul>
+<p>公式ホームページは<a href="https://www.byodoin.or.jp/">こちら</a></p>
+</div>
+</div>
+
+<h2>清水寺</h2>
+<div class="slide-info__wrapper">
+<img
+        class="slideshow"
+        src="IMG_4869.jpg"
+        alt="清水寺 スライド画像"
+        width="870" height="550"
+        data-images='[
+          "IMG_4869.jpg",
+          "S__4869.jpg",
+          "IMG_1111.jpg"
+        ]'
+      >
+<div class="info-box">
+  <h3>基本情報</h3>
+  <ul>
+        <li>正式名称：清水寺</li>
+        <li>創建：778年(延鎮/坂上田村麻呂)</li>
+        <li>拝観時間：6:00~18:00(7,8月は閉門18:30)</li>
+        <li>拝観料：大人：500円/小・中学生：200円</li>
+        <li>見どころ：仁王門や本堂を含む様々な建築と音羽の滝（滝の水には延命・恋愛・学問成就の効果があります）</li>
+        <li>所在地</li>
+<div class="map-container">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6536.961367158718!2d135.78208607441425!3d34.99467056738515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108d385dcfb07%3A0x62af658650c434ba!2z5riF5rC05a-6!5e0!3m2!1sja!2sjp!4v1751539225179!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</ul>
+<p class="home">公式ホームページは<a href="https://www.kiyomizudera.or.jp/">こちら</a></p>
+</div>
+</div>
+
+
+</main>
+
+<script>
+    window.addEventListener('load', () => {
+      document.querySelectorAll('.slideshow').forEach((imgEl) => {
+        // data-images 属性をパースして配列化
+        const images = JSON.parse(imgEl.getAttribute('data-images'));
+        let idx = 0;
+        setInterval(() => {
+          idx = (idx + 1) % images.length;
+          imgEl.src = images[idx];
+        }, 2000);
+      });
     });
   </script>
-    <h2>目次</h2> 
-    <ul>
-        <li>おすすめの観光地</li>
-        <li>食べ物</li>   
-    </ul>
 
- </body> 
+
+
+
+
+</body>
+</html>
