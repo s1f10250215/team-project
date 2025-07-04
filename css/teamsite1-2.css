@@ -123,6 +123,7 @@ body {
   font-family: sans-serif;
 }
 
+/*ここから下はハンバーガーメニューのcss*/
 /* 1. チェックボックスは画面から隠す */
 #menu-toggle {
   display: none;
