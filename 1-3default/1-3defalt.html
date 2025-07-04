@@ -37,25 +37,38 @@
         slideWidth: 700  // 5秒ごとに切り替え
          // 画像の横幅
       });
+      $('.slider2').bxSlider({
+      auto: true,
+      pause: 5000,
+      slideWidth: 700
     });
+    });
+    
+
   </script>
   <style>
     /* スライダー全体を包む .bx-wrapper を中央寄せ */
     
   </style>
+
+  
+  
+
+
 </head>
 <body >
-  <h1>ＫＡＮＡＧＡＷＡ　ＶＡＣＡＴＩＯＮ　ＳＰＯＴ</h1>
-  <h3>☆江ノ島水族館</h3>
+  <h1 id="daimei">KANAGAWA  VACATION  SPOT</h1>
+  <div class="daimeiigai">
+  <h3 id="subdaimei"> ⭐ 江ノ島水族館　 </h3>
 
   <div class="button">
     <button
       onclick="location.href='https://www.google.co.jp/maps/place/%E6%96%B0%E6%B1%9F%E3%83%8E%E5%B3%B6%E6%B0%B4%E6%97%8F%E9%A4%A8/@35.3100048,139.4768531,17z/data=!3m1!5s0x60184ef9a1beac9b:0x9318c6bf6c2aa680!4m6!3m5!1s0x60184ef97613a5af:0x679611b7d80b7d4f!8m2!3d35.3100048!4d139.479428!16s%2Fg%2F120p5275?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D';"
     >地図</button>
     <button
-      onclick="location.href='1-3option.html';"
-    >評価</button>
-    <button>お問い合わせ</button>
+      onclick="location.href='https://tenki.jp/leisure/3/17/109/198/';"
+    >現地の天気</button>
+    <button onclick="location.href='https://www.enosui.com/contact.php'">お問い合わせ</button>
   </div>
 
   <!-- スライダー本体 -->
@@ -64,6 +77,44 @@
     <div><img src="1.jpg"       alt="画像2"></div>
     <div><img src="3.jpeg"     alt="画像3"></div>
     <div><img src="2.jpeg"     alt="画像4"></div>
+  </div>
+  <div class="detail">
+    <h3>
+    <p>新江ノ島水族館（えのすい）は、相模湾と太平洋の生物をテーマに</p>
+    
+    <p>した、体験型のエデュテインメント水族館です。相模湾大水槽やイ</p>
+    
+    <p>ルカショー、クラゲ展示など、見どころ満載で、訪れる人々を楽し</p>
+    
+    <p>ませています。特に、相模湾の多様な生態系を再現した相模湾ゾー</p>
+    
+    <p>ンは人気で、大水槽では約2万匹の魚たちが優雅に泳ぐ姿を観察でき</p>
+    
+    <p>ます。</p></h3>
+  </div>
+  <div class="eigyo">
+    <h3>
+    営業時間：<br>
+    　5月7日（水）～7月11日（金）<br>
+    　　9:00～17:00（16:00）<br>
+    </h3>
+    <h6>※()を最終入場時間</h6>
+    
+    </h3>
+  </div>
+  <img id="enoshimaLOGO"   src="enonsima logo.jpg">
+  </div>
+  <img id="umi" src="24441089_m.jpg">
+  <img id="hana" src="24990349.png">
+
+  <div class="daimeiigai">
+  <h3 id="subdaimei"> ⭐ 赤レンガ倉庫　 </h3>
+  <div class="slider2">
+    <div><img src="4139776_s.jpg" alt="赤レンガ1"></div>
+    <div><img src="32660531_s.jpg" alt="赤レンガ2"></div>
+    <div><img src="4847347_s.jpg" alt="赤レンガ4"></div>
+  </div>
+
   </div>
 </body>
 </html>
