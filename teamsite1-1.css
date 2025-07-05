@@ -1,0 +1,79 @@
+/* ----------------------------------
+   リセット＆ベース設定
+---------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;    /* 横スクロールだけ封じる */
+  overflow-y: auto;      /* 縦スクロールを自動に */
+  font-family: sans-serif;
+  color: dimgrey;
+}
+
+/* ----------------------------------
+   背景動画を置いている最上部セクション
+---------------------------------- */
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;     /* ここを「height」→「min-height」に */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;       /* 横溢れは隠すが、縦は下の余白で伸びる */
+  padding-bottom: 200px; /* ←スクロール分の余白を確保*/
+}
+
+/* 動画を中央／全画面に表示 */
+section video {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* ----------------------------------
+   セクション内部の白背景コンテンツ
+---------------------------------- */
+.bg-white {
+  position: relative;
+  background: rgba(255,255,255,0.75);
+  padding: 60px 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ----------------------------------
+   見出しまわり
+---------------------------------- */
+h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.mokuji {
+  background: antiquewhite;
+  padding: 20px;
+  margin-top: 1.5em;
+}
+
+#mokuji-midasi {
+  background-color: antiquewhite;
+  font-family: "Kokoro", serif;
+  padding: .5em;
+  margin-bottom: .5em;
+}
+h3 {
+    text-align: center;
+}

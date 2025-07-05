@@ -1,8 +1,50 @@
 body {
-    background-color: rgb(127, 185, 255);
+    
     font-family: 'Times New Roman', Times, serif;
     font-size: larger;
+    margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
 }
 h1 {
-    color: gold;
+    
+     position: relative;
+      z-index: 1;
+      color: #fff;
+      text-align: center;
+      margin-top: 20px;
+      font-size: xx-large;
+}
+#slideshow {
+      position: fixed;    /* スクロールしても画面に固定 */
+      top: 0;
+      left: 0;
+      width: 100vw;       /* ビューポート幅いっぱい */
+      height: 100vh;      /* ビューポート高さいっぱい */
+      object-fit: cover;  /* 縦横比を維持して切り抜き or 拡大 */
+      z-index: -1;        /* 必要ならテキストを前面に表示 */
+    }
+hero {
+  text-align: center;
+}
+.typewriter {
+  display: inline-block;  /* inline 要素だと width アニメが効かないので */
+  /* 以下は既存の typing アニメ CSS をそのまま */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .15em solid #000;
+  width: 0;   /* アニメ前の幅 */
+  animation:
+    typing 3s steps(30,end) forwards,
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50%      { border-color: black; }
 }
