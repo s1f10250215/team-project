@@ -48,3 +48,79 @@ hero {
   from, to { border-color: transparent; }
   50%      { border-color: black; }
 }
+
+/*ここから下はハンバーガーメニューのcss*/
+/* 1. チェックボックスは画面から隠す */
+#menu-toggle {
+  display: none;
+}
+
+/* 2. メニューアイコン（label） */
+.menu-icon {
+  width: 30px;
+  height: 22px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin: 16px;
+}
+.menu-icon span,
+.menu-icon span::before,
+.menu-icon span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #f7f4f4;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.menu-icon span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu-icon span::before {
+  top: -8px;
+}
+.menu-icon span::after {
+  top: 8px;
+}
+
+/* 3. チェック時にアイコンを×印に変形 */
+#menu-toggle:checked + .menu-icon span {
+  background: transparent;
+}
+#menu-toggle:checked + .menu-icon span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+#menu-toggle:checked + .menu-icon span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/* 4. ナビゲーション */
+nav.menu {
+  display: none;      /* 初期は非表示 */
+  position: absolute;
+  top: 56px;          /* アイコン下に表示 */
+  left: 0;
+  width: 100%;
+  background: #333;
+  z-index: 100;
+}
+nav.menu a {
+  display: block;
+  padding: 12px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+}
+nav.menu a:hover {
+  background: #444;
+}
+
+/* 5. チェック時にメニューを表示 */
+#menu-toggle:checked ~ nav.menu {
+  display: block;
+}
